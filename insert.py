@@ -9,6 +9,7 @@ try:
         db = conexao.get_database(db_name)
         collection = db['produtos']
 
+        
         # --- Usando insert_one ---
         produto_unico = {"nome": "Mouse sem Fio", "preco": 120.50, "qtd": 200, "marca": "Genérica"}
         resultado_one = collection.insert_one(produto_unico)
